@@ -1,0 +1,33 @@
+from django.conf.urls import url,include
+from login import views
+
+urlpatterns=[
+    url(r'^get_superman', views.get_superman),
+    url(r'^post_superman', views.post_superman),
+    url(r'^get_member', views.get_member),
+    url(r'^login_superman', views.login_superman),
+    url(r'^login_member', views.login_member),
+    url(r'^getBillByAccount', views.getBillByAccount),
+    url(r'^getValue', views.getValue),
+    url(r'^getLastValue', views.getLastValue),
+    url(r'^getFamilyValue', views.getFamilyValue),
+    url(r'^getInfo', views.getInfo),
+    url(r'^changePassword', views.changePassword),
+    url(r'^newBill', views.newBill),
+    url(r'^deleteBill', views.deleteBill),
+    url(r'^changeBill', views.changeBill),
+    url(r'^getAllBIAO', views.getAllBIAO),
+    url(r'^newBIAO', views.newBIAO),
+    url(r'^changeBIAO', views.changeBIAO),
+    url(r'^deleteBIAO', views.deleteBIAO),
+    url(r'^getAllInvestment', views.getAllInvestment),
+    url(r'^newInvestment', views.newInvestment),
+    url(r'^changeInvestment', views.changeInvestment),
+    url(r'^deleteInvestment', views.changeInvestment),
+    url(r'^getAllMsg', views.getAllMsg),
+    url(r'^newMessage', views.newMessage),
+    url(r'^newMember', views.newMember),
+    url(r'^getAllMember', views.getAllMember),
+    url(r'^registerSuperman', views.registerSuperman),
+    url(r'^changeInfo', views.changeInfo),
+]
